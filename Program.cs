@@ -6,22 +6,16 @@ class Program
 {
 	static void Main(string[] args)
 	{
-		string colour, pluralNoun, name;
+		int[] arrayName = {1, 2, 3};
 
-		Console.Write("Enter a colour: ");
-		colour = Console.ReadLine();
+		Console.WriteLine(arrayName[0]);
+		
+		//creates new array that holds 2 elements
+		string[] friends = new string[2];
+		friends[0] = "Jim";
+		friends[1] = "Pam";
 
-		Console.Write("Enter a plural noun: ");
-		pluralNoun = Console.ReadLine();
-
-		Console.Write("Enter a name: ");
-		name = Console.ReadLine();
-
-
-		Console.WriteLine("Roses are " + colour);
-		Console.WriteLine(pluralNoun + " are blue");
-		Console.WriteLine("I love " + name);
-
+		Console.WriteLine(friends[1]);
 	}
 	
 }
