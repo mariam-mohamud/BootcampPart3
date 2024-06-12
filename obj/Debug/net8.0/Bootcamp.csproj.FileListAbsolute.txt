@@ -1,0 +1,14 @@
+C:\Users\mariam\CSharp\Bootcamp\bin\Debug\net8.0\Bootcamp.exe
+C:\Users\mariam\CSharp\Bootcamp\bin\Debug\net8.0\Bootcamp.deps.json
+C:\Users\mariam\CSharp\Bootcamp\bin\Debug\net8.0\Bootcamp.runtimeconfig.json
+C:\Users\mariam\CSharp\Bootcamp\bin\Debug\net8.0\Bootcamp.dll
+C:\Users\mariam\CSharp\Bootcamp\bin\Debug\net8.0\Bootcamp.pdb
+C:\Users\mariam\CSharp\Bootcamp\obj\Debug\net8.0\Bootcamp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mariam\CSharp\Bootcamp\obj\Debug\net8.0\Bootcamp.AssemblyInfoInputs.cache
+C:\Users\mariam\CSharp\Bootcamp\obj\Debug\net8.0\Bootcamp.AssemblyInfo.cs
+C:\Users\mariam\CSharp\Bootcamp\obj\Debug\net8.0\Bootcamp.csproj.CoreCompileInputs.cache
+C:\Users\mariam\CSharp\Bootcamp\obj\Debug\net8.0\Bootcamp.dll
+C:\Users\mariam\CSharp\Bootcamp\obj\Debug\net8.0\refint\Bootcamp.dll
+C:\Users\mariam\CSharp\Bootcamp\obj\Debug\net8.0\Bootcamp.pdb
+C:\Users\mariam\CSharp\Bootcamp\obj\Debug\net8.0\Bootcamp.genruntimeconfig.cache
+C:\Users\mariam\CSharp\Bootcamp\obj\Debug\net8.0\ref\Bootcamp.dll
