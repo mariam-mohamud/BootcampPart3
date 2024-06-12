@@ -1,28 +1,27 @@
-﻿namespace Bootcamp;
+﻿using System.Runtime.CompilerServices;
+
+namespace Bootcamp;
 
 class Program
 {
 	static void Main(string[] args)
 	{
-		//converting string into an integer
-		int num = Convert.ToInt32("19");
-		Console.WriteLine(num + 6);
+		string colour, pluralNoun, name;
 
-		//calculator program with integers
-		Console.Write("Enter a number: ");
-		int num1 = Convert.ToInt32(Console.ReadLine());
-		Console.Write("Enter another number: ");
-		int num2 = Convert.ToInt32(Console.ReadLine());
+		Console.Write("Enter a colour: ");
+		colour = Console.ReadLine();
 
-		Console.WriteLine(num1 + num2);
+		Console.Write("Enter a plural noun: ");
+		pluralNoun = Console.ReadLine();
 
-		//calculator program with decimals
-		Console.Write("Enter a number: ");
-		double num3 = Convert.ToDouble(Console.ReadLine());
-		Console.Write("Enter another number: ");
-		double num4 = Convert.ToDouble(Console.ReadLine());
+		Console.Write("Enter a name: ");
+		name = Console.ReadLine();
 
-		Console.WriteLine(num3 + num4);
+
+		Console.WriteLine("Roses are " + colour);
+		Console.WriteLine(pluralNoun + " are blue");
+		Console.WriteLine("I love " + name);
+
 	}
 	
 }
