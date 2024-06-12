@@ -6,16 +6,16 @@ class Program
 {
 	static void Main(string[] args)
 	{
-		int[] arrayName = {1, 2, 3};
-
-		Console.WriteLine(arrayName[0]);
+		string name, job, contactInfo;
 		
-		//creates new array that holds 2 elements
-		string[] friends = new string[2];
-		friends[0] = "Jim";
-		friends[1] = "Pam";
+		Console.WriteLine("Enter your name: ");
+		name = Console.ReadLine();
+		Console.WriteLine("Enter your job: ");
+		job = Console.ReadLine();
+		Console.WriteLine("Enter your contact information: ");
+		contactInfo = Console.ReadLine();
 
-		Console.WriteLine(friends[1]);
+		Console.WriteLine("Hi my name is " + name + ". I work as a " + job + ". You can contact me via " + contactInfo);
 	}
 	
 }
