@@ -6,22 +6,48 @@ class Program
 {
 	static void Main(string[] args) 
 	{
-		bool isMale = true;
-		bool isTall = false;
+		Console.WriteLine(GetDay(80));
+	}
 
-		if (isMale && isTall) 
+	static string GetDay(int dayNum) 
+	{
+		string dayName;
+
+		switch (dayNum) 
 		{
-			Console.WriteLine("You are male & tall");
-		} else if (isMale && !isTall)
-		{
-			Console.WriteLine("You are male & not tall");
-		} else if (!isMale && isTall)
-		{
-			Console.WriteLine("You are not male & tall");
-		} else 
-		{
-			Console.WriteLine("You are not male & not tall");
+			//in the case that the day number is 0, the day name will br sunday - then breaks out of the loop
+			case 0:
+			dayName = "Monday";
+			break;
+
+			case 1:
+			dayName = "Tuesday";
+			break;
+
+			case 2:
+			dayName = "Wednesday";
+			break;
+
+			case 3:
+			dayName = "Thursday";
+			break;
+
+			case 4:
+			dayName = "Friday";
+			break;
+
+			case 5:
+			dayName = "Saturday";
+			break;
+
+			case 6:
+			dayName = "Sunday";
+			break;
+
+			default:
+			dayName = "Invalid";
+			break;
 		}
-		
-}
+		return dayName;
+	}
 }
