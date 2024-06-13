@@ -1,4 +1,5 @@
 ﻿using System.Runtime.CompilerServices;
+using System.Transactions;
 
 namespace Bootcamp;
 
@@ -6,26 +7,35 @@ class Program
 {
 	static void Main(string[] args) 
 	{
-		//while a condition is true, loop
-		int index = 1;
-		while (index <= 5)
+		string secretWord = "mariam";
+		string guess = "";
+		int guessCount = 0;
+		bool OutOfGuesses = false;
+
+		
+		while (guess != secretWord && !OutOfGuesses) 
 		{
-			Console.WriteLine(index);
-			index++;
+			if (guessCount < 3)
+			{
+			    Console.Write("Enter guess: ");
+			    guess = Console.ReadLine();
+			    guessCount++;
+			}
+			else 
+			{
+			    OutOfGuesses = true;
+				Console.WriteLine("You lose :(");
+		    }
 		}
+			if (OutOfGuesses)
+			{
+				Console.WriteLine("You ran out of guesses :(");
+			}
+			else 
+			{
+				Console.WriteLine("YAY!");
+			}
 
-		//do while loop
-		do
-		{
-			Console.WriteLine(index);
-			index++;
-		} while (index <= 5);
-
-		//for loop - iterating variable (change everytime we go throug the loop)
-		for (int i = 1; i <= 5; i++)
-		{
-			Console.WriteLine(i);
-		}
-
-	}
+	
+}
 }
