@@ -6,48 +6,26 @@ class Program
 {
 	static void Main(string[] args) 
 	{
-		Console.WriteLine(GetDay(80));
-	}
-
-	static string GetDay(int dayNum) 
-	{
-		string dayName;
-
-		switch (dayNum) 
+		//while a condition is true, loop
+		int index = 1;
+		while (index <= 5)
 		{
-			//in the case that the day number is 0, the day name will br sunday - then breaks out of the loop
-			case 0:
-			dayName = "Monday";
-			break;
-
-			case 1:
-			dayName = "Tuesday";
-			break;
-
-			case 2:
-			dayName = "Wednesday";
-			break;
-
-			case 3:
-			dayName = "Thursday";
-			break;
-
-			case 4:
-			dayName = "Friday";
-			break;
-
-			case 5:
-			dayName = "Saturday";
-			break;
-
-			case 6:
-			dayName = "Sunday";
-			break;
-
-			default:
-			dayName = "Invalid";
-			break;
+			Console.WriteLine(index);
+			index++;
 		}
-		return dayName;
+
+		//do while loop
+		do
+		{
+			Console.WriteLine(index);
+			index++;
+		} while (index <= 5);
+
+		//for loop - iterating variable (change everytime we go throug the loop)
+		for (int i = 1; i <= 5; i++)
+		{
+			Console.WriteLine(i);
+		}
+
 	}
 }
