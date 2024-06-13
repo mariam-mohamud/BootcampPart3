@@ -7,35 +7,16 @@ class Program
 {
 	static void Main(string[] args) 
 	{
-		string secretWord = "mariam";
-		string guess = "";
-		int guessCount = 0;
-		bool OutOfGuesses = false;
+			Console.WriteLine(ExponentMethod(4,3));
+	}
 
-		
-		while (guess != secretWord && !OutOfGuesses) 
+	static int ExponentMethod(int num1, int num2)
+	{
+		int emptyNum = 1;
+		for (int i = 1; i <= num2; i++) 
 		{
-			if (guessCount < 3)
-			{
-			    Console.Write("Enter guess: ");
-			    guess = Console.ReadLine();
-			    guessCount++;
-			}
-			else 
-			{
-			    OutOfGuesses = true;
-				Console.WriteLine("You lose :(");
-		    }
-		}
-			if (OutOfGuesses)
-			{
-				Console.WriteLine("You ran out of guesses :(");
-			}
-			else 
-			{
-				Console.WriteLine("YAY!");
-			}
-
-	
-}
+			emptyNum *= num1;
+		}	
+		return emptyNum;
+	}
 }
